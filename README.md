@@ -3,9 +3,9 @@ Interview prep guide for college students
 Coding interview steps
 
 1. Understand and analyse the problem
-Read the problem, start thinking about it and if possible write the things that are given and the things that you need to find out on a piece of paper.
+* Read the problem, start thinking about it and if possible write the things that are given and the things that you need to find out on a piece of paper.
 
-Ask yourself:
+* Ask yourself:
     - are you able to understand the question fully?
     - would you be able to explain the question to a layman?
     - what and how many inputs are required?
