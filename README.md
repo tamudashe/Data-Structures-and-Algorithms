@@ -1,4 +1,4 @@
-# Data-Structures-and-Algorithms
+# Master Coding Interviews
 Interview prep guide for college students
 Coding interview steps
 
