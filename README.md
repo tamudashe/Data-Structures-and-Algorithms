@@ -1,6 +1,6 @@
-# Master Coding Interviews
+# Flow: The Ultimate College Career Prep
 
-![SWE](https://images.pexels.com/photos/374918/pexels-photo-374918.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260)
+![SWE](https://images.pexels.com/photos/374916/pexels-photo-374916.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260)
 
 Interview prep guide for college students
 Coding interview steps
