@@ -17,7 +17,7 @@ Coding interview steps
     * do you have enough information? if not, try understanding the question again
 
 2. Go though the sample inputs and examples thoroughly
-    * take very simple examples and find the output 
+    * take very simple examples and find the output
     * take more complex and bigger inputs to see what will be the output, how many use cases do we want
     then time to handle edge cases
     * try out the problem with no input, what should be the output now
