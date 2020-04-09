@@ -1,5 +1,5 @@
-
-
+def insert_into_memory_cache(memory_cache, start_index, initial_speed, is_spike=None):
+    memory_cache[start_index] = {initial_speed: is_spike}
 
 def can_stop(runway, initial_speed, start_index=0, memory_cache=None):
     # only done the first time to initialize the memory_cache
