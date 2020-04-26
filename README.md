@@ -19,8 +19,7 @@ ___
 
 2. **Go though the sample inputs and examples thoroughly**
     * take very simple examples and find the output
-    * take more complex and bigger inputs to see what will be the output, how many use cases do we want
-    then time to handle edge cases
+    * take more complex and bigger inputs to see what will be the output, how many use cases do we want then time to handle edge cases
     * try out the problem with no input, what should be the output now
     * try out the problem with invalid input, what should be the output now
 
@@ -32,7 +31,7 @@ ___
     * try to use classes and objects while handling questions which try to implement some real-world problem (like management systems)
 
 4. **Start coding**
-    just keep in mind 3 things, and you'll surely figure out the path
+    * just keep in mind 3 things, and you'll surely figure out the path
     * the point where you started
     * where are you right now?
     * where is your destination?
