@@ -1,4 +1,4 @@
-# Flow: *The Ultimate College Career Prep*
+# Flow
 
 ![SWE](https://images.pexels.com/photos/374916/pexels-photo-374916.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260)
 

@@ -1,0 +1,61 @@
+Sliding window algorithm
+
+O(n) and O(1) time complexity
+O(1) - amount of memory used does not scale with input size
+
+1. Usually involves a data structure that is iterable (array | string)
+2. Looking for some subrange (shortest | longest | or target value)
+3. There is always a clear O(n^2) or 2^n solution.
+
+sliding window  - the current section of the array/string you're looking at
+                - at least two pointers (start-window : end-window)
+
+2 Questions
+a. When to grow window?
+b. When to shrink window?
+
+Types of windows
+
+- Fast/Slow - fast until you find target, slow until target is gone
+1. bit flip
+2. minimum window substring
+3. consecutive sub-array sum
+
+- Fast/Catch-up - jump the slow pointer to the fast pointer when a condition is met
+1. maximum consecutive sum
+2. buy/sell stocks
+
+- Fast/Lagging - slow representing 1 or 2 indices behind the fast pointer
+1. house robber
+
+- Front/Back - one pointer at front, another at back
+1. rainwater
+2. sorted two-sum
+
+__
+
+TODO:
+(leetcode)[leetcode.com/tag/sliding-window/]
+
+*1. Minimum window substring (76)
+*2. Longest substring with at most two distinct characters (159)
+3. Longest substring without repeating characters (3)
+4. Sliding window maximum (239)
+*5. Longest substring with at most k distinct characters (340)
+6. Longest repeating character replacement (424)
+7. Sliding window median (480)
+8. Permutation in string (567)
+9. Minimum window subsequence (727)
+10. Longest turbulent subarray (978)
+11. Subarrays with K different integers (992)
+12. Minimum number of K consecutive bit flips (995)
+13. Max consecutive ones III (1004)
+14. Find K-length substrings with no repeated characters (1100)
+15. Minimum swaps to group all ones together (1151)
+16. Moving stones until consecutive II (1040)
+17. Grumpy bookstore owner (1052)
+18. Number of submatrices that sum to target (1074)
+19. Diet plan performance (1176)
+20. Get equal substrings within budget (1208)
+21. Maximum points you can obtain from cards (1423)
+
