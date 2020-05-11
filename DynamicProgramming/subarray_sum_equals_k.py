@@ -19,7 +19,7 @@ def subarray_sum(arr, target_sum):
 
 
 def main():
-    arr = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+    arr = [0, 0, 0, 0, 0, 0]
     k = 0
     print(subarray_sum(arr, k))
 
