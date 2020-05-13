@@ -31,7 +31,7 @@ def characterReplacement(s, k):
 def main():
     s = "BAAAB"
     k = 2
-    print(characterReplacement(s, k))  # 4
+    print(characterReplacement(s, k))  # 5
 
 
 if __name__ == "__main__":
