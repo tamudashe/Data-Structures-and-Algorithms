@@ -1,8 +1,15 @@
+def accum(s):
+    result = []
+    for i, char in enumerate(s):
+        temp = [char.upper()]
+        for _ in range(i):
+            temp.append(char.lower())
+        result.append("".join(temp))
+    return "-".join(result)
+
+
 def main():
-    a = [1, 3, 2, 4, 5, 55]
-    a.append(2)
-    a.pop(4)
-    print(a)
+    print("Result: ", accum(input("Enter a string: ")))
 
 
 if __name__ == '__main__':
