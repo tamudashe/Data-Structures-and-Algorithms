@@ -4,14 +4,13 @@
 def longestOnes(A, K):
     longest_ones = 0
     start_window = 0
-    replacements = 0
 
     for end_window, num in enumerate(A):
         if num == 0:
-            replacements += 1
-        while replacements > K:
+            K -= 1
+        if K < 0:
             if A[start_window] == 0:
-                replacements -= 1
+                K += 1
             start_window += 1
         longest_ones = max(longest_ones, end_window - start_window + 1)
     return longest_ones
