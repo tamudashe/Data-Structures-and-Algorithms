@@ -14,11 +14,10 @@ def characterReplacement(s, k):
     max_count = 0
     table = {}
 
-    # keep moving start_window while # of replacements < k
     for end_window, char in enumerate(s):
         table[char] = table.get(char, 0) + 1
         max_count = max(max_count, table[char])
-        # shrink the window until replacements < k
+        # reduce the current window until we can replace all characters
         while (end_window - start_window + 1) - max_count > k:
            table[s[start_window]] -= 1
            start_window += 1
