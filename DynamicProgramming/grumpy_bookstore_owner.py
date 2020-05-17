@@ -15,11 +15,11 @@ def maxSatisfied(customers, grumpy, X):
     curr_sum = 0
 
     for i, shoppers in enumerate(customers):
-        if not grumpy[i]:
+        if not grumpy[i] == 0:
             satisfied += shoppers
         else:
             curr_sum += shoppers
-        if grumpy[i - X] and i >= X:
+        if i >= X and grumpy[i - X] == 1:
             curr_sum -= customers[i - X]
         technique_satisfied = max(technique_satisfied, curr_sum)
 
