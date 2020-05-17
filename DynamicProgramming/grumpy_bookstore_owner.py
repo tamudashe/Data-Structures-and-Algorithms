@@ -9,7 +9,7 @@
 # customers = [1,0,1,2,1,1,7,5],
 # grumpy    = [0,1,0,1,0,1,0,1],
 # output = 16
-def maxSatisfied(customers, grumpy, X):
+def maxSatisfied(customers, grumpy, x):
     satisfied = 0
     technique_satisfied  = 0
     curr_sum = 0
@@ -19,8 +19,8 @@ def maxSatisfied(customers, grumpy, X):
             satisfied += shoppers
         else:
             curr_sum += shoppers
-        if i >= X and grumpy[i - X] == 1:
-            curr_sum -= customers[i - X]
+        if i >= x and grumpy[i - x] == 1:
+            curr_sum -= customers[i - x]
         technique_satisfied = max(technique_satisfied, curr_sum)
 
     satisfied += technique_satisfied
