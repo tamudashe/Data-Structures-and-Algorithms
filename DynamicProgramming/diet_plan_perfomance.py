@@ -32,21 +32,23 @@ def main():
     k1 = 1
     lower1 = 3
     upper1 = 3
-    print(diet_plan_performance(calories1, k1, lower1, upper1)) # 0
+    assert diet_plan_performance(calories1, k1, lower1, upper1) == 0
 
     # test 2
     calories2 = [3,2]
     k2 = 2
     lower2 = 0
     upper2 = 1
-    print(diet_plan_performance(calories2, k2, lower2, upper2)) # 1
+    assert diet_plan_performance(calories2, k2, lower2, upper2) == 1
 
     # test 3
     calories3 = [6, 5, 0, 0]
     k3 = 2
     lower3 = 1
     upper3 = 5
-    print(diet_plan_performance(calories3, k3, lower3, upper3)) # 0
+    assert diet_plan_performance(calories3, k3, lower3, upper3) == 0
+
+    print("Passed all test cases!")
 
 if __name__ == '__main__':
     main()
