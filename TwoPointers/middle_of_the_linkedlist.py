@@ -3,6 +3,8 @@
 # If the total number of nodes in the linkedlist is even, return the second
 # middle node
 
+# if even, the fast pointer will be none when the loop terminates
+
 class Node:
     def __init__(self, data=None, next=None):
         self.data = data
