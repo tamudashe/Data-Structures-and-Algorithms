@@ -20,7 +20,6 @@ def average_subarrays(numbers, k):
         curr_sum += num
         if window_end < k - 1:
             continue
-            
         averages.append(curr_sum/k)
         curr_sum -= numbers[window_start]
         window_start += 1
