@@ -2,7 +2,7 @@
 
 - Programming language: Python 3
 
-1; Python Basics
+1. Python Basics
 
 - all necessary libraries
   collections module
@@ -19,7 +19,7 @@
 - reading writing from files
 - memory management in python
 
-2; Data structures and algorithms
+2. Data structures and algorithms
 
 - Primitive types
 
@@ -35,7 +35,7 @@
   string and array questions are often interchangeable
   * resizing factor of lists in python
   Why is the amortized insertion runtime 0(1)? - resizes happen very rarely
-  Inserting N elements takes O(N) work
+  Inser````ting N elements takes O(N) work
   * consider using a bit array / bit map / bit string
   * bit masking
   * counting bits set to 1
