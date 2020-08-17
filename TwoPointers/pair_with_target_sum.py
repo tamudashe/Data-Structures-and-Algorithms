@@ -15,11 +15,13 @@ def pair_with_target_sum(nums, target_sum):
             left += 1
         else:
             right -= 1
+        
     return [-1, -1]
+
 
 def main():
     arr = [1, 4, 6, 7, 9]
-    t = 13
+    t = 5
     print(pair_with_target_sum(arr, t))
 
 if __name__ == '__main__':
