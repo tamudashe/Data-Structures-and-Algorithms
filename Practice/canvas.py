@@ -1,15 +1,18 @@
-def accum(s):
-    result = []
-    for i, char in enumerate(s):
-        temp = [char.upper()]
-        for _ in range(i):
-            temp.append(char.lower())
-        result.append("".join(temp))
-    return "-".join(result)
+# python dictionaries
+from collections import defaultdict
+
+
+def python_dictionaries():
+    name = "tamudashe"
+    chars = defaultdict(lambda: 0)
+    for char in name:
+        chars[char] += 1
+    print(dict(chars))
+    return chars
 
 
 def main():
-    print("Result: ", accum(input("Enter a string: ")))
+    python_dictionaries()
 
 
 if __name__ == '__main__':
