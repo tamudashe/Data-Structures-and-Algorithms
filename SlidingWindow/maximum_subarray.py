@@ -1,9 +1,11 @@
-# Given an integer array nums, find the contiguous subarray (containing at
-# least one number) which has the largest sum and return its sum.
+# Given an integer array nums, find the contiguous subarray
+# (containing at least one number) which has the largest sum and
+# return its sum.
 
 # Note: use Kadane's algorithm
-# Look at each index and look at the maximum sum ending at that index
-# at each point, either continue the subarray or start a new one
+# Look at each index and look at the maximum sum ending at that
+# index at each point, either continue the subarray or start a new
+# one
 
 def max_subarray(nums):
     curr_max = float('-inf')
