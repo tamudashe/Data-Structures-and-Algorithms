@@ -1,53 +1,30 @@
-# Given an array containing 0s and 1s, if you are allowed to replace no more than
-# 'k' 0s with 1s, find the length of the longest contiguous subarray of all 1s
+# Given an array containing 0s and 1s, if you are allowed to replace no more than 'k' 0s with 1s, find the length of
+# the longest contiguous subarray of all 1s.
 
-# When the replacements we have made is equal to k, start moving the start pointer
-# with the end pointer until we eliminate one zero
-
-def length_of_longest_subarray_alternative(arr, k):
-    max_length = 0
-    start = 0
-    replacements = 0
-
-    for end, num in enumerate(arr):
-        if num == 0:
-            replacements += 1
-        if replacements > k:
-            if arr[start] == 0:
-                replacements -= 1
-            start += 1
-        max_length = max(max_length, end - start + 1)
-
-    return max_length
+# Grov window up to a certain point and slide it.
 
 def length_of_longest_subarray(arr, k):
-    max_length = 0
-    start = 0
-    curr_ones_count = 0
+    window_start = 0
+    window_ones_count = 0
+    max_window = float('-inf')
 
-    for end, num in enumerate(arr):
+    for window_end, num in enumerate(arr):
         if num == 1:
-            curr_ones_count += 1
+            window_ones_count += 1
 
-        if (end - start + 1 - curr_ones_count) > k:
-            if arr[start] == 1:
-                curr_ones_count -= 1
-            start += 1
+        if (window_end - window_start + 1) - window_ones_count > k:
+            if arr[window_start] == 1:
+                window_ones_count -= 1
+            window_start += 1
 
-        max_length = max(max_length, end - start + 1)
-    return max_length
+        max_window = max(max_window, window_end - window_start + 1)
+    return max_window
+
 
 def main():
-    arr1 = [0, 1, 1, 0, 0, 0, 1, 1, 0, 1, 1]
-    k1 = 2
+    arr = [0, 1, 0, 0, 1, 1, 0, 1, 1, 0, 0, 1, 1]
+    k = 3
+    print(length_of_longest_subarray(arr, k))
 
-    arr2 = [0, 1, 0, 0, 1, 1, 0, 1, 1, 0, 0, 1, 1]
-    k2 = 3
 
-    assert length_of_longest_subarray(arr1, k1) == 6
-    assert length_of_longest_subarray(arr2, k2) == 9
-
-    print("Passed all test cases!")
-
-if __name__ == '__main__':
-    main()
+main()

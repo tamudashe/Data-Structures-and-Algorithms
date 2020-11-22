@@ -1,18 +1,17 @@
-# Given an array of positive numbers and a positive number 'k',
-# find the maximum sum of any contiguous subarray of size 'k'
+# Given an array of positive numbers and a positive number 'k', find the maximum sum of any contiguous subarray of
+# size 'k'
 
 def max_sum_subarray(numbers, k):
-    max_sum = float('-inf')
-    curr_sum = 0
+    curr_window_sum = 0
+    window_start = 0
+    max_sum = 0
 
-    for i, num in enumerate(numbers):
-        curr_sum += num
-
-        if i < k - 1:
-            continue
-
-        max_sum = max(max_sum, curr_sum)
-        curr_sum = curr_sum - numbers[i - k + 1]
+    for window_end, num in enumerate(numbers):
+        curr_window_sum += num
+        if window_end >= k - 1:
+            max_sum = max(max_sum, curr_window_sum)
+            curr_window_sum -= numbers[window_start]
+            window_start += 1
 
     return max_sum
 
@@ -23,5 +22,4 @@ def main():
     print(max_sum_subarray(numbers, k))
 
 
-if __name__ == '__main__':
-    main()
+main()

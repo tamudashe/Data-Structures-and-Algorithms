@@ -15,9 +15,10 @@ def max_subarray(nums):
         max_sum = max(max_sum, curr_max)
     return max_sum
 
+
 def main():
     nums = [-2, 1, -3, 4, -2, 1, -5, 4]
     print(max_subarray(nums))
 
-if __name__ == '__main__':
-    main()
+
+main()
