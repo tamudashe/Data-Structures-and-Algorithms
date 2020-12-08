@@ -1,7 +1,5 @@
-# Given an array of sorted numbers and a target sum, find a pair in the
-# array whose sum is equal to the given target.
-# Write a function to return the indices of the two numbers such that they
-# add up to the given target
+# Given an array of sorted numbers and a target sum, find a pair in the array whose sum is equal to the given target.
+# Write a function to return the indices of the two numbers such that they add up to the given target
 
 def pair_with_target_sum(nums, target_sum):
     left = 0
@@ -24,7 +22,6 @@ def main():
     t = 5
     print(pair_with_target_sum(arr, t))
 
+
 if __name__ == '__main__':
     main()
-
-
