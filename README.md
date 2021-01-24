@@ -1,6 +1,6 @@
 # Flow
 
-![SWE](https://images.pexels.com/photos/374916/pexels-photo-374916.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260)
+![SWE](https://images.pexels.com/photos/3184460/pexels-photo-3184460.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260)
 
 ## Coding interview steps
 
